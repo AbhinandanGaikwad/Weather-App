@@ -53,10 +53,12 @@ fun WeatherPage(viewModel: WeatherViewModel){
 
     val keyboardController = LocalSoftwareKeyboardController.current
 
+
     val focusManager = LocalFocusManager.current
     val focusRequester = remember { FocusRequester() }
     var isFocused by remember { mutableStateOf(false) }
 
+    //Themes
     val isDarkTheme = isSystemInDarkTheme()
     val primaryColor = if (isDarkTheme) Color(0xFF80D8FF) else Color(0xFF29B6F6)
     val secondaryColor = if (isDarkTheme) Color(0xFFFFF59D) else Color(0xFFFFD700)
