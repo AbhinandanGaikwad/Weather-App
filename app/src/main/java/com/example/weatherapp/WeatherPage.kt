@@ -153,7 +153,8 @@ fun WeatherPage(viewModel: WeatherViewModel){
                             text = "Welcome to WeatherApp!",
                             fontSize = 24.sp,
                             fontWeight = FontWeight.Bold,
-                            color = textFieldColour
+                            color = textFieldColour,
+                            textAlign = TextAlign.Center
                         )
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(
@@ -166,7 +167,7 @@ fun WeatherPage(viewModel: WeatherViewModel){
                         Icon(
                             imageVector = Icons.Default.LocationOn,
                             contentDescription = "Weather Icon",
-                            modifier = Modifier.size(80.dp),
+                            modifier = Modifier.size(60.dp),
                             tint = secondaryColor
                         )
                     }
